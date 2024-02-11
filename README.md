@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Preet Nagda's Web Resume
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an web resume created using ReactJS
 
 ## Available Scripts
 

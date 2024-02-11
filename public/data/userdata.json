@@ -1,0 +1,38 @@
+{
+    "name": "Preet Nagda",
+    "profileImage": "/images/profile.jpeg",
+    "bio": "Full Stack | Cloud Developer",
+    "social": {
+        "linkedin": "www.linkedin.com/in/preet-nagda",
+        "x": "https://twitter.com/preetnagda34",
+        "email": "preetnagda34@gmail.com",
+        "github": "https://github.com/Preetnagda"
+    },
+    "education": [
+        {
+            "institue": "RMIT University",
+            "location": "Melbourne",
+            "date_of_start": "February 2023",
+            "date_of_completion": "December 2024",
+            "major": "Information Technology",
+            "level_of_study": "Postgraduate"
+        },
+        {
+            "institue": "Mumbai University",
+            "location": "Mumbai",
+            "date_of_start": "June 2017",
+            "date_of_completion": "June 2021",
+            "major": "Information Technology",
+            "level_of_study": "Bachelor of Engineering"
+        }
+    ],
+    "work": [
+        {
+            "role": "Software Engineering Intern",
+            "company": "Doocan Inc",
+            "location": "Melbourne",
+            "comapny_info": "A furniture cloud factory",
+            "info_text": "Web focussed something something something"     
+        }
+    ]
+}
