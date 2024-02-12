@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar = ({sidebarWidth, children}) => {
     return(
-        <div class={`md:fixed md:${sidebarWidth} md:h-screen bg-gray-500`}>
+        <div className={`md:fixed md:w-64 md:h-screen bg-secondary`}>
             {children}
         </div>
     )

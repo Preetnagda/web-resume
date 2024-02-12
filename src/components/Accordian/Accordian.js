@@ -1,18 +1,16 @@
-const Accordian = ({Title, Text}) => {
+const Accordian = ({title, content}) => {
+  
     return (
-        <div class="group">
-            <button>
-                <div>
-                    <Title/>
-                </div>
-            </button>
-            <div className="grid grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100 overflow-hidden transition-all duration-300 ease-in-out">
-                <div>
-                    <Text/>
-                </div>
-            </div>
+      <div className="mt-2 cursor-pointer bg-white group/accordian w-full">
+        <div className="text-left items-center select-none flex justify-between flex-row">
+          {title}
         </div>
-    )
+        <div className={`pt-2 overflow-hidden transition-[max-height] duration-1000 ease-in max-h-0 group-hover/accordian:max-h-96`}>
+          <p className="pb-4 text-left text-secondary">
+            {content}
+          </p>
+        </div>
+      </div>
+    );
 }
-
 export default Accordian;

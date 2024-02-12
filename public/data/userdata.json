@@ -12,18 +12,18 @@
         {
             "institue": "RMIT University",
             "location": "Melbourne",
-            "date_of_start": "February 2023",
-            "date_of_completion": "December 2024",
-            "major": "Information Technology",
-            "level_of_study": "Postgraduate"
+            "date_of_start": "Feb 2023",
+            "date_of_completion": "Dec 2024",
+            "program": "MS in Information Technology",
+            "info_text": "3.6 GPA (Current)"
         },
         {
             "institue": "Mumbai University",
             "location": "Mumbai",
-            "date_of_start": "June 2017",
-            "date_of_completion": "June 2021",
-            "major": "Information Technology",
-            "level_of_study": "Bachelor of Engineering"
+            "date_of_start": "Jun 2017",
+            "date_of_completion": "Jun 2021",
+            "program": "B.E in Information Technology",
+            "info_text": "CGPA 8.39"
         }
     ],
     "work": [
@@ -32,7 +32,52 @@
             "company": "Doocan Inc",
             "location": "Melbourne",
             "comapny_info": "A furniture cloud factory",
-            "info_text": "Web focussed something something something"     
+            "info_text": "Web focussed something something something",
+            "date_of_start": "Jun 2023",
+            "date_of_completion": "Current",
+            "type": "Internship"
+        },
+        {
+            "role": "Software Engineer",
+            "company": "Anantha Insights",
+            "location": "Mumbai",
+            "comapny_info": "IT Consultancy Startup with 20+ employees",
+            "info_text": "Python Developer (External Worker) - Developed REST APIs and ETL, supply chain, logistics analysis products",
+            "date_of_start": "Jul 2021",
+            "date_of_completion": "Feb 2023",
+            "type": "Full-Time"
+        },
+        {
+            "role": "Trainee Software Developer",
+            "company": "Datamoulds",
+            "location": "Mumbai",
+            "comapny_info": "IT Consultancy Company",
+            "info_text": "FrontEnd (ReactJS): Worked on creating an MVP of a full-fledged inventory management UI. Used React",
+            "date_of_start": "Apr 2021",
+            "date_of_completion": "Jun 2021",
+            "type": "Internship"
+        },
+        {
+            "role": "Web Developer",
+            "company": "Creative Finserve Pvt Ltd",
+            "location": "Mumbai",
+            "comapny_info": "Fintech",
+            "info_text": "Worked as a full stack web developer to revamp company's website and deploy the same on Heroku cloud.",
+            "date_of_start": "Feb 2020",
+            "date_of_completion": "Jun 2020",
+            "type": "Internship"
         }
+    ],
+    "keySkills": [
+        "FastAPI",
+        "Flask",
+        "Django",
+        "NextJS",
+        "ReactJS",
+        "Google Cloud",
+        "Docker",
+        "Kubernetes",
+        "PostgreSQL",
+        "MongoDB"
     ]
 }

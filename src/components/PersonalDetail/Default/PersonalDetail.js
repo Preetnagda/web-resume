@@ -10,8 +10,8 @@ const PersonalDetail = ({className}) => {
     useEffect(() => {
         let localSocials = [];
         if(userData["social"]){
-            Object.keys(userData["social"]).forEach(social => {
-                localSocials.push(<SocialIcon className={"w-8 fa-inverse"} social={social}></SocialIcon>)
+            Object.keys(userData["social"]).forEach((social, index) => {
+                localSocials.push(<SocialIcon key={index} className={"w-8 fa-inverse"} social={social}></SocialIcon>)
             });
             setSocials(localSocials);
         }
