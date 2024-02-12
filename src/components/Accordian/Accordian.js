@@ -6,7 +6,7 @@ const Accordian = ({title, content}) => {
           {title}
         </div>
         <div className={`pt-2 overflow-hidden transition-[max-height] duration-1000 ease-in max-h-0 group-hover/accordian:max-h-96`}>
-          <p className="pb-4 text-left text-secondary">
+          <p className="pb-4 text-left text-secondary-text">
             {content}
           </p>
         </div>

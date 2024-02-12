@@ -13,13 +13,13 @@ const Education = () => {
                     <div className='flex justify-between w-full' key={index}>
                         <div>
                             <p className='text-lg text-left'>{education["program"]}</p>
-                            <p className='text-left text-sm text-secondary'>{education["institue"]}, {education["location"]}</p>
-                            <p className='text-left text-sm text-secondary'>{education["info_text"]}</p>
+                            <p className='text-left text-sm text-secondary-text'>{education["institue"]}, {education["location"]}</p>
+                            <p className='text-left text-sm text-secondary-text'>{education["info_text"]}</p>
                         </div>
                         <div className='min-w-[4rem]'>
-                            <p className='text-left text-sm text-secondary'>{education["date_of_start"]}</p>
-                            <p className='text-center text-xs text-secondary'>to</p>
-                            <p className='text-left text-sm text-secondary'>{education["date_of_completion"]}</p>
+                            <p className='text-left text-sm text-secondary-text'>{education["date_of_start"]}</p>
+                            <p className='text-center text-xs text-secondary-text'>to</p>
+                            <p className='text-left text-sm text-secondary-text'>{education["date_of_completion"]}</p>
                         </div>
                     </div>
 

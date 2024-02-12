@@ -3,8 +3,7 @@
     "profileImage": "/images/profile.jpeg",
     "bio": "Full Stack | Cloud Developer",
     "social": {
-        "linkedin": "www.linkedin.com/in/preet-nagda",
-        "x": "https://twitter.com/preetnagda34",
+        "linkedin": "https://www.linkedin.com/in/preet-nagda",
         "email": "preetnagda34@gmail.com",
         "github": "https://github.com/Preetnagda"
     },
@@ -78,6 +77,34 @@
         "Docker",
         "Kubernetes",
         "PostgreSQL",
-        "MongoDB"
-    ]
+        "MongoDB - Certified Developer"
+    ],
+    "projects": [
+        {
+            "title": "Alumni System API",
+            "content": "API to facilitate sharing of alumni documents like certificate and transcripts. Implemented token based authentication and authorization using FastAPI, dynamodb database, s3 file storage and retrival and also configurable with docker.",
+            "github": "https://github.com/Preetnagda/AlumniSystemBackend"
+        },
+        {
+            "title": "Realtime Emergency Reporting System",
+            "content": "Built a system that can be used by civilians to report crime or seek help during emergencies from concerne authorities and the authorities to track these requests. Contained NodeJS based API, MongoDB, ReactJS and Android Mobile Application.",
+            "github": "https://github.com/Preetnagda/SkreamSOS-API"
+
+        },
+        {
+            "title": "Public Queue Optimization System",
+            "content": "Built a system to predict wait time for patients in multiple queues in a hospital. Implemented a responsive frontend module and Django backend module running on algorithms created in python to calculate wait times.",
+            "github": "https://github.com/Preetnagda/PublicQueueOptimization"
+        }
+    ],
+    "listSills": {
+        "Leadership": [
+            "Trainee Mentor at Anantha Insights, conducted multiple workshops as part of intern training program.",
+            "Web Master at ACM SAKEC. Lead the website team to revamp a static website into dynamic by adding database and dashboards."
+        ],
+        "Communication": [
+            "Speaker at a 2 day Django + Python Workshop. Discussed basic concepts of Python as well as Web Development including MVC pattern web apps, APIs, HTTP protocal and much more."
+        ]
+    }
 }
+

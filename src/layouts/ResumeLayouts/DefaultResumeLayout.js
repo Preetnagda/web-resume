@@ -3,6 +3,8 @@ import PersonalDetail from '../../components/PersonalDetail/Default/PersonalDeta
 import KeySkills from '../../components/KeySkills/Default/KeySkills.js';
 import Education from '../../components/Education/Default/Education.js';
 import Work from '../../components/Work/Default/Work.js';
+import Project from '../../components/Project/Default/Project.js';
+import ListSkills from "../../components/ListSkills/ListSkills.js";
 
 const DefaultResumeLayout = () => {
     const sidebarWidth = "w-64";
@@ -11,7 +13,7 @@ const DefaultResumeLayout = () => {
             <div className="md:basis-64 shrink-0">
                 <Sidebar sidebarWidth={sidebarWidth}>
                     <div className="md:h-1/6"></div>
-                    <PersonalDetail className="w-full"/>
+                    <PersonalDetail className="py-4 w-full"/>
                     <div className='text-white absolute hidden md:block right-2.5 bottom-2.5'>
                     </div>
                 </Sidebar>
@@ -28,6 +30,13 @@ const DefaultResumeLayout = () => {
                 <div className='md:flex flex-col lg:flex-row text-left'>
                     <Work />
                 </div>
+                <div className='md:flex flex-col lg:flex-row text-left'>
+                    <Project />
+                </div>
+                <div className='md:flex flex-col lg:flex-row text-left'>
+                    <ListSkills />
+                </div>
+
             </div>
         </div>
     );

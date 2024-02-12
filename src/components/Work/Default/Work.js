@@ -16,14 +16,14 @@ const Work = () => {
                     <div key="title" className='flex-grow'>
                         <div className='flex justify-between'>
                             <p className='flex items-center text-lg text-left w-2/5'>{element["role"]}</p>
-                            <p className='flex justify-end items-center text-sm text-secondary w-1/5'>{element["type"]}</p>
-                            <p className='flex flex-col sm:flex-row items-center justify-end text-sm text-secondary w-2/5'>
+                            <p className='flex justify-end items-center text-sm text-secondary-text w-1/5'>{element["type"]}</p>
+                            <p className='flex flex-col sm:flex-row items-center justify-end text-sm text-secondary-text w-2/5'>
                                 <span>{element["date_of_start"]}&nbsp;</span>
                                 <span>-&nbsp;</span>
                                 <span>{element["date_of_completion"]}</span></p>
                         </div>
                         <div>
-                            <p className='text-base text-left text-secondary'>{element["company"]}, {element["location"]} - {element["comapny_info"]}</p>
+                            <p className='text-base text-left text-secondary-text'>{element["company"]}, {element["location"]} - {element["comapny_info"]}</p>
                         </div>
                     </div>
                 ];
