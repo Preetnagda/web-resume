@@ -15,7 +15,7 @@ const Work = () => {
                 let title = [
                     <div key="title" className='flex-grow'>
                         <div className='flex justify-between'>
-                            <p className='flex items-center text-lg text-left w-2/5'>{element["role"]}</p>
+                            <p className='flex font-semibold items-center text-lg text-left w-2/5'>{element["role"]}</p>
                             <p className='flex justify-end items-center text-sm text-secondary-text w-1/5'>{element["type"]}</p>
                             <p className='flex flex-col sm:flex-row items-center justify-end text-sm text-secondary-text w-2/5'>
                                 <span>{element["date_of_start"]}&nbsp;</span>
@@ -28,7 +28,7 @@ const Work = () => {
                     </div>
                 ];
                 return(
-                    <div key={index} className=''>
+                    <div key={index} className='mt-6 w-full'>
                         <Accordian key={index} title={title} content={element["info_text"]} />
                     </div>
                 );

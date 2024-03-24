@@ -1,11 +1,11 @@
 import React from 'react';
 import './Resume.css';
 
-import DefaultResumeLayout from '../../layouts/ResumeLayouts/DefaultResumeLayout';
+import { Layout } from '../../config/Config';
 
 const Resume = () => {
     return(
-        <DefaultResumeLayout/>
+        <Layout/>
     )
 }
 

@@ -1,21 +1,12 @@
 import React, {useContext, useState, useEffect} from 'react';
 import Image from "../../Image/Image.js";
 import { UserContext } from '../../../context/UserContext.js';
-import SocialIcon from '../../SocialIcon/SocialIcon.js';
+import Socials from '../../Socials/Socials.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse, faLocation, faLocationArrow, faLocationPin, faMapLocation, faMapLocationDot, faMapPin } from '@fortawesome/free-solid-svg-icons';
 
-const PersonalDetail = ({className}) => {
+const PersonalDetail = ({className, hasSocial}) => {
     const {userData} = useContext(UserContext);
-    const [socials, setSocials] = useState([]);
-
-    useEffect(() => {
-        let localSocials = [];
-        if(userData["social"]){
-            Object.keys(userData["social"]).forEach((social, index) => {
-                localSocials.push(<SocialIcon key={index} className={"w-8 fa-inverse"} social={social}></SocialIcon>)
-            });
-            setSocials(localSocials);
-        }
-    }, [userData]);
 
     return(<div className={className}>
         <Image
@@ -24,11 +15,15 @@ const PersonalDetail = ({className}) => {
         />
         <div className="py-4">
             <h1 className='text-white'>{userData.name}</h1>
-            <p className='text-white'>{userData.bio}</p>
+            <p className='text-white text-lg'>{userData.bio}</p>
+            <p className='text-white pt-4'><FontAwesomeIcon icon={faHouse} size="sm"/>&nbsp; {userData.location}</p>
+
         </div>
+        {hasSocial? 
         <div>
-            {socials}
+            <Socials />
         </div>
+        :[]}
     </div>);
 }
 

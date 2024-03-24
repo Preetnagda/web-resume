@@ -12,7 +12,7 @@ const Education = () => {
                 localEducationElements.push(
                     <div className='flex justify-between w-full' key={index}>
                         <div>
-                            <p className='text-lg text-left'>{education["program"]}</p>
+                            <p className='text-lg text-left font-semibold'>{education["program"]}</p>
                             <p className='text-left text-sm text-secondary-text'>{education["institue"]}, {education["location"]}</p>
                             <p className='text-left text-sm text-secondary-text'>{education["info_text"]}</p>
                         </div>

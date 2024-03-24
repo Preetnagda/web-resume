@@ -1,5 +1,6 @@
 {
     "name": "Preet Nagda",
+    "location": "Melbourne, Australia",
     "profileImage": "/images/profile.jpeg",
     "bio": "Full Stack | Cloud Developer",
     "social": {
@@ -31,7 +32,7 @@
             "company": "Doocan Inc",
             "location": "Melbourne",
             "comapny_info": "A furniture cloud factory",
-            "info_text": "Web focussed something something something",
+            "info_text": "Responsible for developing the Doocan website and managing the cloud infrastrucutre. Working on various services that will be offered by Doocan",
             "date_of_start": "Jun 2023",
             "date_of_completion": "Current",
             "type": "Internship"
@@ -41,30 +42,45 @@
             "company": "Anantha Insights",
             "location": "Mumbai",
             "comapny_info": "IT Consultancy Startup with 20+ employees",
-            "info_text": "Python Developer (External Worker) - Developed REST APIs and ETL, supply chain, logistics analysis products",
+            "info_text": "I was outsourced as a Python Developer in a client company, where we Developed REST APIs and products for ETL, supply chain and logistics. I used Python framework and libraries like FastAPI, Pandas & Numpy, as well as PostgreSQL and Docker. For another inhouse project we developed multiple dashboards supported by NodeJS backend and ejs templating language to fetch user inputs and create configurations. We used inversify methodologies to create these REST APIs and pluggable services.",
             "date_of_start": "Jul 2021",
             "date_of_completion": "Feb 2023",
-            "type": "Full-Time"
+            "type": "Full-Time",
+            "keySkills":[
+                "FastAPI",
+                "Docker",
+                "NodeJS",
+                "PostgreSQL",
+                "REST APIs"
+            ]
         },
         {
             "role": "Trainee Software Developer",
             "company": "Datamoulds",
             "location": "Mumbai",
             "comapny_info": "IT Consultancy Company",
-            "info_text": "FrontEnd (ReactJS): Worked on creating an MVP of a full-fledged inventory management UI. Used React",
+            "info_text": "As a Frontend ReactJS developer, I worked on creating an MVP of a full-fledged inventory management UI. Used React Router, Context API, HighCharts, created resusable components and handled complex state management for the same.",
             "date_of_start": "Apr 2021",
             "date_of_completion": "Jun 2021",
-            "type": "Internship"
+            "type": "Internship",
+            "keySkills":[
+                "ReactJS"
+            ]
         },
         {
             "role": "Web Developer",
             "company": "Creative Finserve Pvt Ltd",
             "location": "Mumbai",
             "comapny_info": "Fintech",
-            "info_text": "Worked as a full stack web developer to revamp company's website and deploy the same on Heroku cloud.",
+            "info_text": "Worked as a full stack web developer to revamp company's website which was outdated in multiple areas. We created a new website using Django and modern frontend libraries like Bootstrap (css) and Jquery (js). I was also responsible to deploy the website on Heroku cloud.",
             "date_of_start": "Feb 2020",
             "date_of_completion": "Jun 2020",
-            "type": "Internship"
+            "type": "Internship",
+            "keySkills":[
+                "Django",
+                "Cloud",
+                "HTML & CSS"
+            ]
         }
     ],
     "keySkills": [
