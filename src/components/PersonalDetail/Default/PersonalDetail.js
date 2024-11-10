@@ -4,13 +4,14 @@ import { UserContext } from '../../../context/UserContext.js';
 import Socials from '../../Socials/Socials.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faLocation, faLocationArrow, faLocationPin, faMapLocation, faMapLocationDot, faMapPin } from '@fortawesome/free-solid-svg-icons';
+import userImage from "../../../images/profile.jpeg";
 
 const PersonalDetail = ({className, hasSocial}) => {
     const {userData} = useContext(UserContext);
 
     return(<div className={className}>
         <Image
-            src={userData.profileImage}
+            src={userImage}
             className={"w-32 rounded-full m-auto"}
         />
         <div className="py-4">
