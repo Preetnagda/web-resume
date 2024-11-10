@@ -2,6 +2,7 @@ import React, {useContext, useEffect, useState} from 'react';
 import { UserContext } from '../../../context/UserContext.js';
 import ListContent from "../../ListContent/Default/ListContent.js";
 import Accordian from '../../Accordian/Accordian.js';
+import SpanBlocks from "../../SpanBlocks/SpanBlocks.js";
 
 const Work = () => {
 
@@ -28,8 +29,20 @@ const Work = () => {
                     </div>
                 ];
                 return(
-                    <div key={index} className='mt-6 w-full'>
-                        <Accordian key={index} title={title} content={element["info_text"]} />
+                    <div key={index} className='mt-6 w-full border-b'>
+                        <Accordian key={index} title={title} open={index == 0 ? true : false} content={
+                            <div>
+                                {element['job_responsibilities'] ? <>
+                                    {element['job_responsibilities'].map((responsibility, idx) => 
+                                    <div key={idx}>
+                                        <p className='font-bold'>• {responsibility['title']}</p>
+                                        <p className='pl-3'>{responsibility['content']}</p>
+                                        <p className='pl-3'><SpanBlocks elements={responsibility['stack']} theme='secondary'/></p>
+                                    </div>)}
+                                </>:
+                                element['info_text']}
+                            </div>
+                        } />
                     </div>
                 );
             });
@@ -38,9 +51,19 @@ const Work = () => {
         }
     }, [userData]);
 
+    const calculateMonthsFromJune2023 = () => {
+        const end = new Date();
+        const june2023 = new Date(2023, 5); // June is month 5 in JavaScript Date (0-indexed)
+        const monthsFromJune2023 = (end.getFullYear() - june2023.getFullYear()) * 12 + (end.getMonth() - june2023.getMonth());
+        return monthsFromJune2023;
+    };
+
     return(
         <div className='p-4 w-full'>
-            <h3 className='font-semibold mb-2'>Work Experience</h3>
+            <div className='flex justify-between'>
+                <h3 className='font-semibold mb-2'>Work Experience</h3>
+                <span>{parseInt((28  + calculateMonthsFromJune2023()) / 12)}+ Years</span>
+            </div>
             {workElements}
         </div>
     );

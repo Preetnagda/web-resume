@@ -28,20 +28,100 @@
     ],
     "work": [
         {
+            "role": "Full Stack Developer",
+            "company": "Tradiecart",
+            "location": "Melbourne",
+            "comapny_info": "A Melbourne based Ecommerce startup",
+            "job_responsibilities": [
+                {
+                    "title": "LLM Agent",
+                    "content": "Developing a chatbot that can be used by customers to get information on products and their applications. Also recommends products from the website and displays source of information as a PDF.",
+                    "stack": [
+                        "NextJS",
+                        "LLM Agents"
+                    ]
+                },
+                {
+                    "title": "Full-Stack Website Development",
+                    "content": "Developing multiple plugins that help automating order processing, shipping and delivery. Also responsible for maintaining the website and adding new features.",
+                    "stack": [
+                        "PHP",
+                        "TPL",
+                        "MySQL"
+                    ]
+                }
+            ],
+            "date_of_start": "Oct 2024",
+            "date_of_completion": "Current",
+            "type": "Part-Time"
+        },
+        {
             "role": "Software Engineering Intern",
             "company": "Doocan Inc",
             "location": "Melbourne",
             "comapny_info": "A furniture cloud factory",
-            "info_text": "Responsible for developing the Doocan website and managing the cloud infrastrucutre. Working on various services that will be offered by Doocan",
+            "job_responsibilities": [
+                {
+                    "title": "Container-Based Packing System",
+                    "content": "Built a microservice to replace the eCommerce cart with shipping container-based order creation. Uses a drag-and-drop UI for enhanced customizability, transparency, and efficiency.\nTech stack: ExpressJS, ReactJS, CloudSQL, hosted on GCP with Cloud Run, Storage Buckets, and Load Balancers",
+                    "stack": [
+                        "ExpressJS",
+                        "ReactJS",
+                        "CloudSQL",
+                        "GCP",
+                        "Cloud Run",
+                        "Storage Buckets",
+                        "Load Balancers"
+                    ]
+                },
+                {
+                    "title": "Full-Stack Website Development",
+                    "content": "Developed and customised CsCart-based doocan.io website",
+                    "stack": [
+                        "PHP",
+                        "TPL",
+                        "MySQL"
+                    ]
+                },
+                {
+                    "title": "AI Furniture Image Generation Tool",
+                    "content": "Developed an AI tool for generating furniture images from user prompts, by fine tuning an image generation model and Python Flask API.",
+                    "stack": [
+                        "Stable Diffusion",
+                        "Python",
+                        "Flask"
+                    ]
+                }
+            ],
             "date_of_start": "Jun 2023",
-            "date_of_completion": "Current",
-            "type": "Internship"
+            "date_of_completion": "Oct 2024",
+            "type": "Part-Time"
         },
         {
             "role": "Software Engineer",
             "company": "Anantha Insights",
             "location": "Mumbai",
             "comapny_info": "IT Consultancy Startup with 20+ employees",
+            "job_responsibilities": [
+                {
+                    "title": "Python Developer - McKinsey & Company",
+                    "content": "Developed REST APIs and products for ETL, supply chain and logistics. Used Python framework and libraries like FastAPI, Pandas & Numpy, as well as PostgreSQL and Docker. ",
+                    "stack": [
+                        "FastAPI",
+                        "Docker",
+                        "NodeJS",
+                        "PostgreSQL",
+                        "REST APIs"
+                    ]
+                },
+                {
+                    "title": "NodeJS Developer - Inhouse Project",
+                    "content": "Developed multiple dashboards supported by NodeJS backend and ejs templating language to fetch user inputs and create configurations. We used inversify methodologies to create these REST APIs and pluggable services.",
+                    "stack": [
+                        "NodeJS"
+                    ]
+                }
+            ],
             "info_text": "I was outsourced as a Python Developer in a client company, where we Developed REST APIs and products for ETL, supply chain and logistics. I used Python framework and libraries like FastAPI, Pandas & Numpy, as well as PostgreSQL and Docker. For another inhouse project we developed multiple dashboards supported by NodeJS backend and ejs templating language to fetch user inputs and create configurations. We used inversify methodologies to create these REST APIs and pluggable services.",
             "date_of_start": "Jul 2021",
             "date_of_completion": "Feb 2023",
@@ -84,12 +164,14 @@
         }
     ],
     "keySkills": [
+        "LLM Agents",
         "FastAPI",
         "Flask",
         "Django",
+        "NodeJS",
         "NextJS",
         "ReactJS",
-        "Google Cloud",
+        "AWS",
         "Docker",
         "Kubernetes",
         "PostgreSQL",

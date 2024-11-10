@@ -1,5 +1,4 @@
 const Card = ({title, content, footerTags}) => {
-    console.log(footerTags);
 return(
     <div class="flex flex-col rounded overflow-hidden shadow-md h-full">
         <div class="px-6 py-4">
