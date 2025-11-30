@@ -15,7 +15,7 @@
             "date_of_start": "Feb 2023",
             "date_of_completion": "Dec 2024",
             "program": "MS in Information Technology",
-            "info_text": "3.6 GPA (Current)"
+            "info_text": "GPA: 3.7 (out of 4)"
         },
         {
             "institue": "Mumbai University",
@@ -23,7 +23,7 @@
             "date_of_start": "Jun 2017",
             "date_of_completion": "Jun 2021",
             "program": "B.E in Information Technology",
-            "info_text": "CGPA 8.39"
+            "info_text": "CGPA 8.39 (out of 10)"
         }
     ],
     "work": [
@@ -34,62 +34,76 @@
             "comapny_info": "A Melbourne based Ecommerce startup",
             "job_responsibilities": [
                 {
-                    "title": "LLM Agent",
-                    "content": "Developing a chatbot that can be used by customers to get information on products and their applications. Also recommends products from the website and displays source of information as a PDF.",
+                    "title": "E-commerce Platform Development",
+                    "content": "Developed and managed the Tradiecart e-commerce platform. Developed high impact features including a multi carrier shipping automation engine and data analysis pipelines on AWS. Simultaneously improved UX and sales capabilities by delivering scalable enhancements, such as dynamic product bundling and recommendation interfaces. Handled end to end development, deployment and server management.",
+                    "link": "https://tradiecart.com.au",
                     "stack": [
-                        "NextJS",
-                        "LLM Agents"
+                        "AWS (EC2, S3, SQS, SES)",
+                        "Git",
+                        "JIRA",
+                        "PostHog",
+                        "Docker"
                     ]
                 },
                 {
-                    "title": "Full-Stack Website Development",
-                    "content": "Developing multiple plugins that help automating order processing, shipping and delivery. Also responsible for maintaining the website and adding new features.",
+                    "title": "AI Agents & MCP Server",
+                    "content": "Developed technical and sales AI agents powered with a RAG pipeline and a MCP server to streamline product information retrieval and simplify the ordering process through a chat based UI seamlessly integrated with the TradieCart website.",
+                    "link": "https://ask.tradiecart.com.au",
                     "stack": [
-                        "PHP",
-                        "TPL",
-                        "MySQL"
+                        "Vercel AI SDK",
+                        "Next.js (TypeScript)",
+                        "CI/CD"
+                    ]
+                },
+                {
+                    "title": "Voice Agent",
+                    "content": "Orchestrated and deployed an AI voice agent to manage customer queries using MCP and integrated assistant tools, enabling seamless handoff to human agents for complex interactions and significantly reducing human effort in customer call handling.",
+                    "stack": [
+                        "Agentic AI",
+                        "Transcibers",
+                        "Text to speech",
+                        "Speech to text",
+                        "Model context protocol"
                     ]
                 }
             ],
             "date_of_start": "Oct 2024",
             "date_of_completion": "Current",
-            "type": "Part-Time"
+            "type": "Full-Time"
         },
         {
-            "role": "Software Engineering Intern",
-            "company": "Doocan Inc",
+            "role": "Software Engineer",
+            "company": "Doocan",
             "location": "Melbourne",
             "comapny_info": "A furniture cloud factory",
             "job_responsibilities": [
                 {
                     "title": "Container-Based Packing System",
-                    "content": "Built a microservice to replace the eCommerce cart with shipping container-based order creation. Uses a drag-and-drop UI for enhanced customizability, transparency, and efficiency.\nTech stack: ExpressJS, ReactJS, CloudSQL, hosted on GCP with Cloud Run, Storage Buckets, and Load Balancers",
+                    "content": "Developed a shipping container based packing system to replace the traditional eCommerce cart, featuring a drag and drop UI that improved customization, transparency, and packing efficiency.",
                     "stack": [
-                        "ExpressJS",
-                        "ReactJS",
-                        "CloudSQL",
-                        "GCP",
-                        "Cloud Run",
-                        "Storage Buckets",
-                        "Load Balancers"
+                        "Node.js",
+                        "React.js (Typescript)",
+                        "Docker",
+                        "AWS ECS"
                     ]
                 },
                 {
-                    "title": "Full-Stack Website Development",
-                    "content": "Developed and customised CsCart-based doocan.io website",
+                    "title": "Doocan Website",
+                    "content": "Developed the cscart based Doocan website, hosted on AWS EC2 with S3 integration. Enhanced customer engagement and expanded market reach through improved website functionality and user experience.",
+                    "link": "https://doocan.io",
                     "stack": [
-                        "PHP",
-                        "TPL",
-                        "MySQL"
+                        "AWS EC2",
+                        "S3",
+                        "CsCart"
                     ]
                 },
                 {
                     "title": "AI Furniture Image Generation Tool",
-                    "content": "Developed an AI tool for generating furniture images from user prompts, by fine tuning an image generation model and Python Flask API.",
+                    "content": "Developed an AI tool for generating furniture images from user prompts, by fine tuning an image generation model wrapped in a Python Flask API.",
                     "stack": [
-                        "Stable Diffusion",
                         "Python",
-                        "Flask"
+                        "Flask",
+                        "Stable Diffusion"
                     ]
                 }
             ],
@@ -101,51 +115,49 @@
             "role": "Software Engineer",
             "company": "Anantha Insights",
             "location": "Mumbai",
-            "comapny_info": "IT Consultancy Startup with 20+ employees",
+            "comapny_info": "IT Consultancy Startup",
             "job_responsibilities": [
                 {
-                    "title": "Python Developer - McKinsey & Company",
-                    "content": "Developed REST APIs and products for ETL, supply chain and logistics. Used Python framework and libraries like FastAPI, Pandas & Numpy, as well as PostgreSQL and Docker. ",
+                    "title": "Data Engineer (Python) - McKinsey & Company",
+                    "content": "Worked as a Data Engineer (Python) with McKinsey & Company to develop a supply chain and logistics analytics platform. Designed and implemented data transformation workflows and exposed them via Flask based APIs.",
                     "stack": [
-                        "FastAPI",
-                        "Docker",
-                        "NodeJS",
-                        "PostgreSQL",
-                        "REST APIs"
+                        "Python",
+                        "Flask",
+                        "PostgreSQL"
                     ]
                 },
                 {
-                    "title": "NodeJS Developer - Inhouse Project",
-                    "content": "Developed multiple dashboards supported by NodeJS backend and ejs templating language to fetch user inputs and create configurations. We used inversify methodologies to create these REST APIs and pluggable services.",
+                    "title": "Automated Data Pipeline",
+                    "content": "Automated a manual Alteryx-based data transformation pipeline using Python and PostgreSQL, eliminating human errors, reducing processing time, and saving approximately $1,000 per month per client in licensing costs.",
                     "stack": [
-                        "NodeJS"
+                        "Python",
+                        "PostgreSQL"
                     ]
                 }
             ],
-            "info_text": "I was outsourced as a Python Developer in a client company, where we Developed REST APIs and products for ETL, supply chain and logistics. I used Python framework and libraries like FastAPI, Pandas & Numpy, as well as PostgreSQL and Docker. For another inhouse project we developed multiple dashboards supported by NodeJS backend and ejs templating language to fetch user inputs and create configurations. We used inversify methodologies to create these REST APIs and pluggable services.",
             "date_of_start": "Jul 2021",
             "date_of_completion": "Feb 2023",
-            "type": "Full-Time",
-            "keySkills":[
-                "FastAPI",
-                "Docker",
-                "NodeJS",
-                "PostgreSQL",
-                "REST APIs"
-            ]
+            "type": "Full-Time"
         },
         {
-            "role": "Trainee Software Developer",
+            "role": "Software Engineer (Intern)",
             "company": "Datamoulds",
             "location": "Mumbai",
             "comapny_info": "IT Consultancy Company",
-            "info_text": "As a Frontend ReactJS developer, I worked on creating an MVP of a full-fledged inventory management UI. Used React Router, Context API, HighCharts, created resusable components and handled complex state management for the same.",
+            "job_responsibilities": [
+                {
+                    "title": "Inventory Management UI",
+                    "content": "Developed the front-end of a full-fledged Inventory Management application using React.js, implementing context and state management for efficient data handling. Integrated libraries such as CryptoJS for secure data processing and Highcharts for interactive data visualizations.",
+                    "stack": [
+                        "React.js",
+                        "CryptoJS",
+                        "Highcharts"
+                    ]
+                }
+            ],
             "date_of_start": "Apr 2021",
             "date_of_completion": "Jun 2021",
-            "type": "Internship",
-            "keySkills":[
-                "ReactJS"
-            ]
+            "type": "Internship"
         },
         {
             "role": "Web Developer",
@@ -156,49 +168,72 @@
             "date_of_start": "Feb 2020",
             "date_of_completion": "Jun 2020",
             "type": "Internship",
-            "keySkills":[
+            "keySkills": [
                 "Django",
                 "Cloud",
                 "HTML & CSS"
             ]
+        },
+        {
+            "role": "Web Development Intern",
+            "company": "Olcademy",
+            "location": "Mumbai",
+            "comapny_info": "E-learning platform",
+            "job_responsibilities": [
+                {
+                    "title": "E-learning Platform Development",
+                    "content": "Collaborated on development of olcademy’s e-learning platform using HTML, CSS, JavaScript, and PHP, improving accessibility and user experience across devices.",
+                    "stack": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "PHP"
+                    ]
+                }
+            ],
+            "date_of_start": "Jun 2019",
+            "date_of_completion": "Oct 2019",
+            "type": "Internship"
         }
     ],
     "keySkills": [
-        "LLM Agents",
+        "React",
+        "NextJS",
+        "TypeScript",
+        "Tailwind",
+        "PHP",
+        "Python",
         "FastAPI",
         "Flask",
-        "Django",
-        "NodeJS",
-        "NextJS",
-        "ReactJS",
         "AWS",
         "Docker",
-        "Kubernetes",
         "PostgreSQL",
-        "MongoDB - Certified Developer"
+        "MongoDB",
+        "LLM Agents"
     ],
     "projects": [
         {
+            "title": "MCP Lab",
+            "content": "Built a platform for managing and testing multiple MCP servers, allowing users to register servers with custom headers, analyze available tools, and interact via manual calls or LLM powered chat using a bring your own key model. Designed to help teams streamline MCP server development workflows and accelerate iterations.",
+            "demo": "https://mcp-lab.preetnagda.com"
+        },
+        {
+            "title": "Medical Flora Chatbot",
+            "content": "Developed an AWS Bedrock based chatbot for research faculty at RMIT. This chatbot enables users to explore relationships between flora, their medicinal properties, and chemical compositions using custom datasets. Implemented multi-step LLM tool invocations with Python scripting to analyze multiple CSV files dynamically.",
+            "demo": "https://cmfoa.info"
+        },
+        {
             "title": "Alumni System API",
-            "content": "API to facilitate sharing of alumni documents like certificate and transcripts. Implemented token based authentication and authorization using FastAPI, dynamodb database, s3 file storage and retrival and also configurable with docker.",
+            "content": "API to facilitate sharing of alumni documents like certificates and transcripts. Implemented token based authentication and authorization using FastAPI, Dynamodb database, s3 file storage and retrieval and also configurable with docker.",
             "github": "https://github.com/Preetnagda/AlumniSystemBackend"
-        },
-        {
-            "title": "Realtime Emergency Reporting System",
-            "content": "Built a system that can be used by civilians to report crime or seek help during emergencies from concerne authorities and the authorities to track these requests. Contained NodeJS based API, MongoDB, ReactJS and Android Mobile Application.",
-            "github": "https://github.com/Preetnagda/SkreamSOS-API"
-
-        },
-        {
-            "title": "Public Queue Optimization System",
-            "content": "Built a system to predict wait time for patients in multiple queues in a hospital. Implemented a responsive frontend module and Django backend module running on algorithms created in python to calculate wait times.",
-            "github": "https://github.com/Preetnagda/PublicQueueOptimization"
         }
     ],
     "listSills": {
         "Leadership": [
-            "Trainee Mentor at Anantha Insights, conducted multiple workshops as part of intern training program.",
-            "Web Master at ACM SAKEC. Lead the website team to revamp a static website into dynamic by adding database and dashboards."
+            "Peer Mentor at RMIT University.",
+            "Tech Lead at Mckinsey & Company.",
+            "Trainee mentor at Anantha Insights.",
+            "Web master at ACM SAKEC (college committee). Lead the team to revamp a static website into dynamic by adding databases and dashboards."
         ],
         "Communication": [
             "Speaker at a 2 day Django + Python Workshop. Discussed basic concepts of Python as well as Web Development including MVC pattern web apps, APIs, HTTP protocal and much more."

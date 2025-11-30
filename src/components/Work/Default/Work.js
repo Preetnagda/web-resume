@@ -1,17 +1,19 @@
-import React, {useContext, useEffect, useState} from 'react';
+
+import React, { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../../../context/UserContext.js';
-import ListContent from "../../ListContent/Default/ListContent.js";
 import Accordian from '../../Accordian/Accordian.js';
 import SpanBlocks from "../../SpanBlocks/SpanBlocks.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Work = () => {
 
-    const {userData} = useContext(UserContext);
+    const { userData } = useContext(UserContext);
     const [workElements, setWorkElements] = useState([]);
 
     useEffect(() => {
         let localWorkElements = [];
-        if(userData["work"]){
+        if (userData["work"]) {
             localWorkElements = userData["work"].map((element, index) => {
                 let title = [
                     <div key="title" className='flex-grow'>
@@ -28,19 +30,21 @@ const Work = () => {
                         </div>
                     </div>
                 ];
-                return(
+                return (
                     <div key={index} className='mt-6 w-full border-b'>
                         <Accordian key={index} title={title} open={index == 0 ? true : false} content={
                             <div>
                                 {element['job_responsibilities'] ? <>
-                                    {element['job_responsibilities'].map((responsibility, idx) => 
-                                    <div key={idx}>
-                                        <p className='font-bold'>• {responsibility['title']}</p>
-                                        <p className='pl-3'>{responsibility['content']}</p>
-                                        <p className='pl-3'><SpanBlocks elements={responsibility['stack']} theme='secondary'/></p>
-                                    </div>)}
-                                </>:
-                                element['info_text']}
+                                    {element['job_responsibilities'].map((responsibility, idx) =>
+                                        <div key={idx}>
+                                            <p className='font-bold flex items-center'>• {responsibility['title']}
+                                                {responsibility['link'] && <a href={responsibility['link']} target="_blank" className="ml-2 text-sm font-normal"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>}
+                                            </p>
+                                            <p className='pl-3'>{responsibility['content']}</p>
+                                            <p className='pl-3'><SpanBlocks elements={responsibility['stack']} theme='secondary' /></p>
+                                        </div>)}
+                                </> :
+                                    element['info_text']}
                             </div>
                         } />
                     </div>
@@ -58,11 +62,11 @@ const Work = () => {
         return monthsFromJune2023;
     };
 
-    return(
+    return (
         <div className='p-4 w-full'>
             <div className='flex justify-between'>
                 <h3 className='font-semibold mb-2'>Work Experience</h3>
-                <span>{parseInt((28  + calculateMonthsFromJune2023()) / 12)}+ Years</span>
+                <span>{parseInt((28 + calculateMonthsFromJune2023()) / 12)}+ Years</span>
             </div>
             {workElements}
         </div>

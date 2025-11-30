@@ -1,12 +1,12 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import Card from "../../Card/Card";
 import { UserContext } from "../../../context/UserContext";
 import SocialIcon from "../../SocialIcon/SocialIcon";
 
 const Project = () => {
-    const {userData} = useContext(UserContext);
+    const { userData } = useContext(UserContext);
 
-    return(
+    return (
         <div className="p-4">
             <h3 className="font-semibold mb-2">Projects</h3>
             <div className="lg:flex">
@@ -17,21 +17,21 @@ const Project = () => {
                         </div>
                     )];
                     let footerTags = [];
-                    if(element['demo']){
+                    if (element['demo']) {
                         footerTags.push(
-                            <a href={element['demo']}>Live Demo</a>
+                            <a href={element['demo']}>Live Site</a>
                         );
                     }
-                    if(element['github']){
+                    if (element['github']) {
                         footerTags.push(
-                            <a href={element['github']}><SocialIcon social={'github'}/>&nbsp;Github</a>
+                            <a href={element['github']}><SocialIcon social={'github'} />&nbsp;Github</a>
                         );
                     }
-                    return (<div className="p-4 ml-[-0.5rem]">
-                        <Card title={element['title']} content={content} footerTags={footerTags}/>
+                    return (<div className="p-4 ml-[-0.5rem] lg:flex-1">
+                        <Card title={element['title']} content={content} footerTags={footerTags} />
                     </div>
                     )
-                }): []}
+                }) : []}
             </div>
         </div>
 
