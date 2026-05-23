@@ -10,17 +10,17 @@ const Accordian = ({title, content, open = false}) => {
   };
 
   return (
-    <div className="mt-2 cursor-pointer bg-white w-full" onClick={toggleAccordian}>
+    <div className="mt-2 cursor-pointer bg-transparent w-full" onClick={toggleAccordian}>
       <div className="text-left items-center select-none flex justify-between flex-row">
         <div className="flex items-start w-full">
           <div className="w-full mr-4">{title}</div>
-          <div className='text-secondary-text text-sm w-6 mt-1'>{isOpen ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronRight} />}</div>
+          <div className='text-secondary-text text-sm w-6 mt-1.5 hover:text-accent transition-colors'>{isOpen ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronRight} />}</div>
         </div>
       </div>
-      <div className={`pt-2 overflow-hidden transition-[max-height] duration-200 ease-in ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
-        <p className="pb-4 text-left text-secondary-text">
+      <div className={`pt-2 overflow-hidden transition-[max-height] duration-300 ease-in-out ${isOpen ? 'max-h-[2000px]' : 'max-h-0'}`}>
+        <div className="pb-4 text-left text-secondary-text">
           {content}
-        </p>
+        </div>
       </div>
     </div>
   );

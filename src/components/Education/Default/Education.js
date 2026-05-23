@@ -12,14 +12,14 @@ const Education = () => {
                 localEducationElements.push(
                     <div className='flex justify-between w-full' key={index}>
                         <div>
-                            <p className='text-lg text-left font-semibold'>{education["program"]}</p>
+                            <p className='text-base text-left font-semibold text-primary-text'>{education["program"]}</p>
                             <p className='text-left text-sm text-secondary-text'>{education["institue"]}, {education["location"]}</p>
-                            <p className='text-left text-sm text-secondary-text'>{education["info_text"]}</p>
+                            <p className='text-left text-sm text-primary-text font-medium'>{education["info_text"]}</p>
                         </div>
-                        <div className='min-w-[4rem]'>
-                            <p className='text-left text-sm text-secondary-text'>{education["date_of_start"]}</p>
-                            <p className='text-center text-xs text-secondary-text'>to</p>
-                            <p className='text-left text-sm text-secondary-text'>{education["date_of_completion"]}</p>
+                        <div className='min-w-[5rem] text-right'>
+                            <p className='text-sm text-secondary-text'>{education["date_of_start"]}</p>
+                            <p className='text-xs text-secondary-text'>to</p>
+                            <p className='text-sm text-secondary-text'>{education["date_of_completion"]}</p>
                         </div>
                     </div>
 
@@ -31,8 +31,8 @@ const Education = () => {
 
     return (
 
-        <div className='p-4 w-full'>
-            <h3 className='font-semibold mb-2'>Education</h3>
+        <div className='p-6 w-full'>
+            <h3 className='font-semibold mb-3 text-primary-text'>Education</h3>
             <Timeline elements={educationElements}/>
         </div>
     );

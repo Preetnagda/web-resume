@@ -11,13 +11,13 @@ const Socials = ({theme}) => {
         let localSocials = [];
         if(userData["social"]){
             Object.keys(userData["social"]).forEach((social, index) => {
-                localSocials.push(<SocialIcon key={index} className={`w-8 ${theme == "primary"? '' :'fa-inverse'}`} social={social}></SocialIcon>)
+                localSocials.push(<SocialIcon key={index} className={`w-5 ${theme == "primary"? '' :'fa-inverse'}`} social={social}></SocialIcon>)
             });
             setSocials(localSocials);
         }
     }, [userData]);
 
-    return <>{socials}</>
+    return <div className='flex gap-3 justify-center'>{socials}</div>
 }
 
 

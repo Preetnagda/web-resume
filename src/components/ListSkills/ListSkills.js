@@ -9,8 +9,8 @@ const ListSkills = () => {
         <>
         {userData['listSills'] ? Object.keys(userData['listSills']).map((key, index) => {
         return(
-            <div className='basis-full p-4'>
-                <h3 className='font-semibold mb-2'>{key}</h3>
+            <div key={index} className='basis-full p-6'>
+                <h3 className='font-semibold mb-3 text-primary-text'>{key}</h3>
                 <List content={userData['listSills'][key]} />
             </div>
         )
